@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+{% block content %}
+<div class="container">
+
+  <div class="imtitle" style="display: flex; text-align: center; margin: 5%;">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/44c26236-8680-4d50-8834-06b925716174/d8rlv0c-758ec741-2f31-4a29-93ac-89b3a2882f06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ0YzI2MjM2LTg2ODAtNGQ1MC04ODM0LTA2YjkyNTcxNjE3NFwvZDhybHYwYy03NThlYzc0MS0yZjMxLTRhMjktOTNhYy04OWIzYTI4ODJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1XTPvnUFj_E3sPwpkvxhGY4gr4F-6jQ7g_5xIcfsDvs" style="width: 12%; border: none"; height="12%; margin-right: 2%">
+    <h1>SAM'S GALLERY</h1>
+  </div>
+
+  <hr>
+
+  <div class="row">
+
+  {% if images %}
+    {% for image in images %}
+    <div class="col-xs-12 col-sm-6 col-md-4 column">
+        <h3>{{image.name}}</h3>
+        <img src="{{image.image_path.url}}" class="img-responsive selectedImage imag">
+        <a href="{% url 'single_image' image.id %}" id='copy'> <button type="button" class="btn btn-success"> Go to Copy Url </button>  </a>
+        <h3>{{image.location}}</h3>
+      </div>
+
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img src='' class="modal-content" id="modal-con">
+
+        <div class="modal-content text-center">
+          <h4> <strong>Description:</strong> {{image.description}}</h4>
+          <h6> <strong>Location:</strong> {{image.location}}</h6>
+          <h6> <strong>Category:</strong> {{image.category}}</h6>
+          <h5> <strong>Photographer:</strong> {{image.photographer}}</h5>
+          <input type="text" value="http://127.0.0.1:8000/{{image.image_path.url}}" id="myInput">
+          <button onclick="myFunction()">Copy Url</button>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
+{% endblock %}

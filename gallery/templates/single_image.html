@@ -1,0 +1,46 @@
+{% load bootstrap4 %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+    <title>{{image.name}}</title>
+    {% block styles %}
+      {% bootstrap_css %}
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock %}
+  </head>
+  <body style="text-align: center; background: #0e0e0e;"><img style="-webkit-user-select: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <img class="single" style="-webkit-user-select: none; width: 100%;" src="{{image.image_path.url}}"><br><br>
+
+          <div class="card">
+            <div class="card-header" >
+              <h1>{{image.name}}</h1>
+            </div>
+          <div class="card-body">
+            <h4> <strong>Description:</strong> {{image.description}}</h4>
+            <h6> <strong>Location:</strong> {{image.location}}</h6>
+            <h6> <strong>Category:</strong> {{image.category}}</h6>
+            <h5> <strong>Photographer:</strong> {{image.photographer}}</h5>
+            <input type="text" value="http://127.0.0.1:8000/{{image.image_path.url}}" id="myInput">
+            <button onclick="myFunction()">Copy Url</button>
+          </div>
+        </div><br>
+
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    {% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+     {% bootstrap_javascript %}
+    {% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,152 @@
+body{
+    background-image: url('https://wallpaperaccess.com/full/802645.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .imag{
+    height: 200px;
+  }
+  
+  h1, .navbar-brand{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  h3{
+    text-decoration: underline;
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+  
+  button{
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .modal-content, .card-body{
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .row{
+    text-align: center;
+  }
+  
+  nav{
+    background-color: green;
+    text-align: left;
+  }
+  
+  .card-header h1{
+    color: white;
+  }
+  
+  .card-header{
+    background-color: maroon;
+  }
+  
+  .card-group{
+    margin-top: 2%;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px grey;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  img:hover{
+    opacity: 0.9;
+    box-shadow: 3px 3px 3px grey;
+  }
+  
+  .single{
+    height: 320px;
+  }
+  
+  #myModal{
+      padding-top: 10%;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+  }
+  
+  .close {
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: 40px;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+  }
+  
+  .close:hover {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+  }
+  
+  img{
+    width: 100%;
+    border-radius: 3%;
+    border: 2px solid grey;
+    margin-bottom: 2%;
+  }
+  
+  .text-center{
+    padding: 3%;
+    background-image: url('');
+    color: white;
+  }
+  
+  #copy{
+    color: white;
+    text-decoration: none;
+  }
+  
+  button{
+    text-align: center;
+  }
+  
+  .column{
+    margin-bottom: 5%;
+  }
+  
+  @media only screen and (min-width: 812px) {
+    .imag{
+      height: 350px;
+    }
+    .imtitle h1{
+     margin: auto;
+     font-size: 65px;
+     text-align: center;
+     color: white;
+     margin-left: -140px;
+     text-decoration: underline;
+   }
+   .imtitle img{
+     margin: auto;
+   }
+   .column{
+     width: 33%;
+     padding-left: 1%;
+     padding-right: 1%;
+   }
+  }
+  
+  @media only screen and (max-width: 812px) {
+    .imtitle h1{
+      font-size: 24px;
+      margin: auto;
+    }
+  }
