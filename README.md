@@ -21,3 +21,6 @@ This is an online gallery where one can post pictures and people can view them o
 * On your terminal run `python manage.py runserver`
 * Access the live site using the local host provided
 * Or access the live website by clicking on this url * *
+
+## Known Bugs
+No Bugs
