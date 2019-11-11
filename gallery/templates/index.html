@@ -15,7 +15,7 @@
     {% for image in images %}
       <div class="col-xs-12 col-sm-6 col-md-4 column">
           <h3>{{image.name}}</h3>
-          <img src="http://127.0.0.1:8000{{image.image_path.url}}" class=" selectedImage imag">
+          <img src="http://127.0.0.1:8000{{image.image_path.url}}" class=" selectedImage imag"  class="hm-gradient" style="width: 380PX;height: 380PX;">
           <a href="{% url 'single_image' image.id %}" id='copy'> <button type="button" class="btn btn-success"> Go to Copy Url </button>  </a>
       </div>
 
@@ -26,11 +26,11 @@
         <!-- Modal Content (The Image) -->
         <img src='' class="modal-content" id="modal-con">
 
-        <div class="modal-content text-center">
-          <h4> <strong>Description:</strong> {{image.description}}</h4>
-          <h6> <strong>Location:</strong> {{image.location}}</h6>
-          <h6> <strong>Category:</strong> {{image.category}}</h6>
-          <h5> <strong>Photographer:</strong> {{image.photographer}}</h5>
+        <div class="modal-content text-center" style="color: black;">
+          <h4> <strong>Description: <br> <hr> </strong> {{image.description}}</h4> <hr>
+          <h6> <strong>Location:  <br> </strong> {{image.location}}</h6> <hr>
+          <h6> <strong>Category: <br> </strong> {{image.category}}</h6> <hr>
+          <h5> <strong>Photographer: <br> </strong> {{image.photographer}}</h5> <hr>
           <input type="text" value="{{image.image_path.url}}" id="myInput">
           <button onclick="myFunction()">Copy Url</button>
         </div>
