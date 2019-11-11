@@ -33,3 +33,7 @@ No Bugs
 
 ## Dependencies
 * pip
+
+## Support and contact details
+* Telephone: +(254) 700082835
+* Email: wendosam21@gmail.com
