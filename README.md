@@ -37,3 +37,7 @@ No Bugs
 ## Support and contact details
 * Telephone: +(254) 700082835
 * Email: wendosam21@gmail.com
+
+### License and Copyright details
+* The MIT License (MIT)
+* Copyright  © 2019**SAM WENDO**
