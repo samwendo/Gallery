@@ -24,3 +24,9 @@ This is an online gallery where one can post pictures and people can view them o
 
 ## Known Bugs
 No Bugs
+
+## Technologies Used
+* CSS for styling.
+* HTML for webpage design.
+* Python3.6.
+* Django 1.11.5
