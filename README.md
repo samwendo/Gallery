@@ -30,3 +30,6 @@ No Bugs
 * HTML for webpage design.
 * Python3.6.
 * Django 1.11.5
+
+## Dependencies
+* pip
