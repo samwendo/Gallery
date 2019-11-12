@@ -15,7 +15,7 @@
     {% for image in images %}
       <div class="col-xs-12 col-sm-6 col-md-4 column">
           <h3>{{image.name}}</h3>
-          <img src="http://127.0.0.1:8000{{image.image_path.url}}" class=" selectedImage imag"  class="hm-gradient" style="width: 380PX;height: 380PX;">
+          <img src="{{image.image_path.url}}" class=" selectedImage imag"  class="hm-gradient" style="width: 380PX;height: 380PX;">
           <a href="{% url 'single_image' image.id %}" id='copy'> <button type="button" class="btn btn-success"> Go to Copy Url </button>  </a>
       </div>
 
