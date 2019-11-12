@@ -20,7 +20,7 @@ This is an online gallery where one can post pictures and people can view them o
 * Install all the requirements found in requirements file.
 * On your terminal run `python manage.py runserver`
 * Access the live site using the local host provided
-* Or access the live website by clicking on this url * *
+* Or access the live website by clicking on this url *https://gallery25.herokuapp.com/*
 
 ## Known Bugs
 No Bugs
